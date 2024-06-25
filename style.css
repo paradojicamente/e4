@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300..700&display=swap');
+
+
+:root {
+
+    --black: #000000;
+    --darkblue: #003380;
+    --skyblue: #0066ff;
+    --moreskyblue: #cce0ff;
+    --bone: #f0eff4;
+    --grey: #333;
+    --gold: #ffcc00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    background-color: var(--moreskyblue);
+    color: var(--darkblue);
+    padding-top: 10rem;
+    gap: 5rem;
+    /*min-height: 200vh;*/
+}
+
+
+#main-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0rem 4rem;
+    height: 60px;
+    gap: 2rem;
+    top: 0;
+    border-top: 1px groove var(--skyblue);
+    border-bottom: 1px groove var(--skyblue);
+    color: var(--bone);
+    background-color: var(--darkblue);
+}
+
+#main-header img {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 90%;
+}
+
+#main-header p {
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+}
+
+#main-nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.25rem 0.35rem;
+    color: var(--bone);
+    font-weight: 300;
+}
+
+#main-nav a:hover {
+    color: var(--bone);
+    background-color: var(--skyblue);
+    border-radius: 0.25rem;
+}
+
+#main-nav a.active {
+    color: var(--bone);
+    background-color: var(--skyblue);
+    border-radius: 0.25rem;
+}
+
+#main-nav a:active {
+    color: var(--bone);
+    background-color: var(--gold);
+    border-radius: 0.25rem;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: static;
+    height: 400px;
+    gap: 3rem;
+    background-image: url("edificio.jpg");
+    background-position: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--bone);
+    text-shadow: 2px 2px var(--black);
+    gap: 1rem;
+}
+
+.hero h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.hero p {
+    line-height: 1.7rem;
+}
+
+.hero .btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.hero img {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 20%;
+}
+
+.hero a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 01rem;
+    font-weight: 600;
+}
+
+.hero .btn-call {
+    color: var(--bone);
+    padding: 0.75rem;
+    background-color: var(--gold);
+    border-radius: 0.5rem;
+}
+
+.hero .btn-call:hover {
+    box-shadow: inset 0px 0px 7px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hero .btn-more {
+    color: var(--bone);
+    padding: 0.75rem;
+    background-color: var(--skyblue);
+    border-radius: 0.5rem;
+}
+
+.hero .btn-more:hover {
+    box-shadow: inset 0px 0px 5px 2px var(--darkblue);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 75%;
+    padding: 2rem;
+}
+
+
+.services p {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+/* Cards */
+
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--darkblue);
+    padding: 2rem;
+}
+
+.property-card {
+    background-color: var(--bone);
+    border: 3px solid var(--skyblue);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card:hover {
+    color: var(--bone);
+    background-color: var(--skyblue);
+}
+
+.property-details {
+    padding: 1rem;
+}
+
+.property-details h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.property-details p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    background-color: var(--bone);
+    border: 2px solid var(--skyblue);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 50%;
+    max-width: 800px;
+    margin: 2rem;
+}
+
+.contact-form h2 {
+    margin-top: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--darkblue);
+    color: var(--bone);
+    border: 2px solid var(--skyblue);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: var(--skyblue);
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--darkblue);
+    padding: 1rem;
+ }
+
+ footer p {
+    margin: 0.3rem 0;
+}
+
+.footer-left { 
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: left;
+    font-size: 0.8rem;
+    color:var(--bone);
+}
+
+.footer-center { 
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color:var(--bone);
+}
+
+.footer-right { 
+    display: flex;
+    flex-direction: column; 
+    width: 30%;
+    text-align: right;
+    align-items: right;
+    font-size: 0.8rem;
+    color:var(--bone);
+}
+
+.footer-right img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+.footer-right img:hover {
+    width: 26px;
+    height: 26px;
+    filter: invert(50%);
+}
